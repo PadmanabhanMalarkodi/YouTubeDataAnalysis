@@ -51,7 +51,7 @@ if selected == "SELECT AND STORE":
     if store_data:
 
         # Setting API key
-        api_key = "AIzaSyBrE0ioxOUuxkjTLq3z8Q5on0OsdreRK74"
+        api_key = "YOUR API KEY"
         api_service_name = "youtube"
         api_version = "v3"
 
@@ -306,7 +306,7 @@ if selected == "MIGRATION OF DATA":
         connect = mysql.connector.connect(
         host = "localhost",
         user="root",
-        password="abcdABCD",
+        password="yourpassword",
         auth_plugin = "mysql_native_password")
 
         # Create a new database and use
@@ -318,7 +318,7 @@ if selected == "MIGRATION OF DATA":
         connect.close()
 
         # Connect to the new created database
-        engine = create_engine('mysql+mysqlconnector://root:abcdABCD@localhost/youtube_db', echo=False)
+        engine = create_engine('mysql+mysqlconnector://root:yourpassword@localhost/youtube_db', echo=False)
 
         # Use pandas to insert the DataFrames data to the SQL Database -> table1
 
@@ -376,7 +376,7 @@ if selected == "DATA ANALYSIS":
         "10. Which videos have the highest number of comments, and what are their corresponding channel names?"
         ],index=0)
     # Creat a connection to SQL
-    connect_for_question = pymysql.connect(host='localhost', user='root', password='abcdABCD', db='youtube_db')
+    connect_for_question = pymysql.connect(host='localhost', user='root', password='yourpassword', db='youtube_db')
     cursor = connect_for_question.cursor()
 
     # Q1
