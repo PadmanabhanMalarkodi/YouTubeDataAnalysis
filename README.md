@@ -47,21 +47,23 @@ YouTube data harvesting involves the systematic collection of data from this spr
 * import streamlit as st
 * from streamlit_option_menu import option_menu
 
-### 4. E T L Process
+### 4. ETL Process
 
-#### a) Extract data
+#### a) Extracting the data
 
 * Extract the particular youtube channel data by using the youtube channel id, with the help of the youtube API developer console.
 
-#### b) Process and Transform the data
+#### b) Transforming the data
 
-* After the extraction process, takes the required details from the extraction data and transform it into JSON format.
+* After the extraction process, take the required data from the extraction and transform it into JSON format.
 
-#### c) Load  data 
+#### c) Loading the data 
 
-* After the transformation process, the JSON format data is stored in the MongoDB database, also It has the option to migrate the data to MySQL database from the MongoDB database.
+* After the transformation process, the JSON format data is stored in the MongoDB database, also it has the option to migrate the data to MySQL database from the MongoDB database.
 
-### 5. E D A Process and Framework
+### 5. EDA Process and Framework
+
+* EDA, or Exploratory Data Analysis, is a crucial step in the data analysis process that involves summarizing, visualizing, and understanding the main characteristics of a dataset.
 
 #### a) Access MySQL DB 
 
@@ -71,7 +73,7 @@ YouTube data harvesting involves the systematic collection of data from this spr
 
 * Filter and process the collected data from the tables depending on the given requirements by using SQL queries and transform the processed data into a DataFrame format.
 
-#### c) Visualization 
+#### c) Data Visualization 
 
 * Finally, create a Dashboard by using Streamlit and give dropdown options on the Dashboard to the user and select a question from that menu to analyse the data and show the output in Dataframe Table.
 
@@ -84,13 +86,14 @@ YouTube data harvesting involves the systematic collection of data from this spr
 
 #### Step 2. Select and Store Tab
 
-* In **Enter a channel_id** copy and paste channel id in the input box, press enter and click **Store data in MongoDB** button in the **Select and Store Tab**.
+* In **Enter a channel ID** copy and paste channel id in the input box, press enter and click **Store data in MongoDB** button to store data in MongoDB.
+* The JSON format data will appear.
 
 #### Step 3. Migration of Data Tab
 
-* Select the **channel name** and click the **Migrate to MySQL** button to migrate the specific channel data to the MySQL database from MongoDB in the **Migration of Data Tab**.
+* Select the **channel name** from dropdown menu and click the **Migrate Data to MySQL** button to migrate the specific channel data to the MySQL database from MongoDB.
 
 #### Step 4. Data Analysis Tab
 
-* **Select a Question** from the dropdown option and you can get the results in **Dataframe format**.
+* **Select a Question** from the dropdown menu and you can get the results in **Dataframe format**.
 
