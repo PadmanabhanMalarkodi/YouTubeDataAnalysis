@@ -97,3 +97,14 @@ YouTube data harvesting involves the systematic collection of data from this spr
 
 * **Select a Question** from the dropdown menu and you can get the results in **Dataframe format**.
 
+### YouTube video link: 
+https://youtu.be/Vz1DTeCWhVk
+
+### References
+
+* Streamlit Documentation: https://docs.streamlit.io/
+* YouTube API Documentation: https://developers.google.com/youtube
+* MongoDB Documentation: https://docs.mongodb.com/
+* SQLAlchemy Documentation: https://docs.sqlalchemy.org/
+* Python Documentation: https://docs.python.org/
+* Matplotlib Documentation: https://matplotlib.org/
