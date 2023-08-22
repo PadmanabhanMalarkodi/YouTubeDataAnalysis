@@ -1,10 +1,10 @@
-# YouTubeDataAnalysis
+# YouTube Data Harvesting and Warehousing
 
 YouTube has emerged as a treasure trove of information, offering a plethora of insights into user behavior, content trends, and engagement metrics. Let's delve into a brief overview of this project.
 
-## YouTube Data Harvesting: Unveiling Insights
+## Introduction
 
-At its core, YouTube data harvesting involves the systematic collection of data from this sprawling video-sharing platform. We're not just talking about videos, but also user interactions, comments, and more. This rich repository of structured (metadata, metrics) and unstructured (comments, content) data presents us with a goldmine of information waiting to be explored.
+YouTube data harvesting involves the systematic collection of data from this sprawling video-sharing platform. We're not just talking about videos, but also user interactions, comments, and more. This rich repository of structured (metadata, metrics) and unstructured (comments, content) data presents us with a goldmine of information waiting to be explored.
 
 ### 1. Tools Installed
 
@@ -25,7 +25,6 @@ At its core, YouTube data harvesting involves the systematic collection of data 
 ### 3. Import Libraries
 
 **Youtube API libraries**
-* import googleapiclient.discovery
 * from googleapiclient.discovery import build
 
 **File handling libraries**
@@ -43,11 +42,10 @@ At its core, YouTube data harvesting involves the systematic collection of data 
 
 **pandas, numpy**
 * import pandas as pd
-* import numpy as np
 
 **Dashboard libraries**
 * import streamlit as st
-* import plotly.express as px
+* from streamlit_option_menu import option_menu
 
 ### 4. E T L Process
 
@@ -75,20 +73,24 @@ At its core, YouTube data harvesting involves the systematic collection of data 
 
 #### c) Visualization 
 
-* Finally, create a Dashboard by using Streamlit and give dropdown options on the Dashboard to the user and select a question from that menu to analyse the data and show the output in Dataframe Table and Bar chart.
+* Finally, create a Dashboard by using Streamlit and give dropdown options on the Dashboard to the user and select a question from that menu to analyse the data and show the output in Dataframe Table.
 
 
 ## User Guide
 
-#### Step 1. Data collection zone
+#### Step 1. Data collection Tab
 
-* Search **channel_id**, copy and **paste on the input box** and click the **Get data and stored** button in the **Data collection zone**.
+* I have provided 10 channel ids in a table format for my convenience. We can also extract channel ids from YouTube page source.
 
-#### Step 2. Data Migrate zone
+#### Step 2. Select and Store Tab
 
-* Select the **channel name** and click the **Migrate to MySQL** button to migrate the specific channel data to the MySQL database from MongoDB in the **Data Migrate zone**.
+* In **Enter a channel_id** copy and paste channel id in the input box, press enter and click **Store data in MongoDB** button in the **Select and Store Tab**.
 
-#### Step 3. Channel Data Analysis zone
+#### Step 3. Migration of Data Tab
 
-* **Select a Question** from the dropdown option you can get the **results in Dataframe format or bar chat format**.
+* Select the **channel name** and click the **Migrate to MySQL** button to migrate the specific channel data to the MySQL database from MongoDB in the **Migration of Data Tab**.
+
+#### Step 4. Data Analysis Tab
+
+* **Select a Question** from the dropdown option and you can get the results in **Dataframe format**.
 
